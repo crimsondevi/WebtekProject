@@ -1,0 +1,45 @@
+html {
+  font-family: monospace;
+}
+
+body {
+  position:relative;
+  background-color: #ceb277;
+  margin: auto;
+  margin-top: 2em;
+  width: 75em;
+}
+
+header {
+  position:relative;
+}
+
+img {
+  border-style: solid;
+  border-radius: 2px;
+}
+
+section {
+  border-style: ridge;
+  border-color: black;
+  margin-bottom: 2em;
+}
+
+h2 {
+  margin-left: 1em;
+}
+
+p, ol, ul {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+li ul { /* affects the ul elements that are children of li elements*/
+  list-style: square;
+}
+
+#date { /*an id for the p element that contains the date*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
