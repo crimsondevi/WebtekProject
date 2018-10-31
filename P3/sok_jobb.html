@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Søk jobb</title>
+  </head>
+  <body>
+    <div class="info">
+    <h2>Ønsker du jobb hos Pizzasteikeren?</h2>
+    <p> Vi er for øyeblikket ute etter både deltids-og fastjobb. Disse jobbene vil være å servere og ha ansvar for utlevering. Den nedre aldersgrensen for å søke er fyllte 16 år. Fyll inn skjemaet under om du ønsker jobb hos oss. <p>
+    <p> Alle er velkomne til søke. Vi setter pris på erfaring innen servicebransjen. Om vi mener at du passr jobben, vil du videre bli kallet inn til intervju. Lykke til! </p><br>
+  </div>
+  <img id="bilde" src="img/sok_jobb.jpg" alt="Søk jobb hos oss, bilde!">
+  <div id="skjema">
+    <form method="GET">
+      <h3> Søk jobb: </h2>
+      <p> Husk å fylle inn alle felt i skjemaet og last opp en CV.</p>
+      <br>
+      <label for="navn"> Navn: </label><br>
+      <input type="text" id="navn" name="navn" placeholder="Navn Navnesen" required pattern="[A-Za-z\s]+"><br>
+      <br>
+      <label for="E-post">E-post:</label><br>
+      <input type="email" id="E-post" name="E-post" placeholder=" navn.navnesen@eksempel.no" required><br>
+      <br>
+      <label for="Fødselsdato"> Fødselsdato:</label> <br>
+      <input type="date" id= "Fødselsdato" max="2002-12-31" name="Fødselsdato" required><br>
+      <br>
+      <label for="fileupload"> Last opp en CV:</label><br>
+      <br>
+      <input type="file" name="fileupload" value="fileupload" id="fileupload" required><br>
+      <br>
+      <input type="submit" value="Send inn søknad">
+    </form>
+  </div>
+  </body>
+</html>
+
+<style>
+
+body{
+  position: relative;
+  margin:10%;
+  margin-top: 5%;
+  background-color: #fffaf0;
+}
+  label{
+  font-size: 18px;
+  margin-bottom:0px;
+}
+#skjema{
+  text-align: left;
+  width:400px;
+  height: 440px;
+  border-radius: 2px;
+  border-color: black;
+  padding: 10px;
+  padding-top: 1px;
+  
+
+}
+
+input{
+  margin:5%;
+  margin-left: 0%;
+  width: 60%;
+  left:0;
+  height: 5%
+}
+
+  .info{
+    margin-right: 10%;
+    text-align: left;
+    width: 90%
+}
+ input[type="submit"] {
+  margin-top:30px;
+}
+input[type="file"] {
+ width:50%;
+
+form p{
+  font-size: 14px;
+  width:60%;
+}
+  #bilde{
+    position: absolute;
+    bottom: 0;
+    right:0px;
+}
+
+
+</style>
