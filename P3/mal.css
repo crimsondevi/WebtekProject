@@ -1,6 +1,7 @@
 body {
   background-image: url("bilder/pizza8.png");
 
+
 }
 
 section{
@@ -15,17 +16,30 @@ section{
 background-color: black;
 padding:15px 20px;
 
+}
+
 background: rgba(0, 0, 0,0.85);
 }
 
-ul {
+ .meny ul {
     list-style-type: none;
     position:relative;
-    text-align:center;
+    align-self: center;
+}
+  ul:last-child{
+    padding-left:50px;
 }
 
-ul li {
+#logo{
+  width:10%;
+
+}
+
+.meny ul li {
     display: inline;
+    left:10opx;
+
+
 }
 
 ul a {
@@ -47,6 +61,8 @@ footer{
   font-family: helvetica;
   background-color: black;
   text-size:0.5em;
+  width:100%;
+
 }
 footer ul{
   list-style-type:none;
@@ -54,11 +70,12 @@ footer ul{
   color: white;
   padding:20px;
   bottom: 0;
-  width:100%;
   background-color: black;
   height:30px;
+  text-align: center;
 }
 footer ul li{
   display: table;
   margin:auto;
+
 }
