@@ -9,19 +9,16 @@
       margin:10%;
       margin-top: 5%;
       background-color: #fffaf0;
+      position: relative;
+
     }
       label{
       font-size: 18px;
       margin-bottom:0px;
     }
     #skjema{
-      text-align: left;
-      width:400px;
-      height: 440px;
-      bottom: 0px;
-      left:0px;
-
-
+      position: relative;
+      float:left;
 
     }
 
@@ -36,7 +33,7 @@
       text-align: left;
       width: 90%
     }
-     input[type="submit"] {
+    input[type="submit"] {
       margin-top:30px;
     }
     input[type="file"] {
@@ -46,10 +43,13 @@
       font-size: 14px;
       width:60%;
     }
-      #bilde{
-    position: absolute;
-     bottom: 8px;
-     right: 16px;
+    textarea{
+      width: 50px;
+    }
+    #bilde_søk_jobb{
+      position: absolute;
+       right:0px;
+       bottom:0px;
 
     }
 
@@ -59,9 +59,8 @@
     <div class="info">
     <h2>Ønsker du jobb hos Pizzasteikeren?</h2>
     <p> Vi er for øyeblikket ute etter både deltids-og fastjobb. Disse jobbene vil være å servere og ha ansvar for utlevering. Den nedre aldersgrensen for å søke er fyllte 16 år. Fyll inn skjemaet under om du ønsker jobb hos oss. <p>
-    <p> Alle er velkomne til søke. Vi setter pris på erfaring innen servicebransjen. Om vi mener at du passr jobben, vil du videre bli kallet inn til intervju. Lykke til! </p><br>
+    <p> Vi setter pris på erfaring innen servicebransjen. Om vi mener at du passer jobben, vil du videre bli kallet inn til intervju. Lykke til! </p><br>
   </div>
-  <img id="bilde" src="img/sok_jobb.jpg" alt="Søk jobb hos oss, bilde!">
   <div id="skjema">
     <form method="GET">
       <h3> Søk jobb: </h2>
@@ -76,6 +75,9 @@
       <label for="Fødselsdato"> Fødselsdato:</label> <br>
       <input type="date" id= "Fødselsdato" max="2002-12-31" name="Fødselsdato" required><br>
       <br>
+      <label for="søknadsTekst"> Søknadstekst:</label><br>
+      <textarea type="text" id="søknadsTekst"></textarea><br>
+      <br>
       <label for="fileupload"> Last opp en CV:</label><br>
       <br>
       <input type="file" name="fileupload" value="fileupload" id="fileupload" required><br>
@@ -83,5 +85,7 @@
       <input type="submit" value="Send inn søknad">
     </form>
   </div>
+  <img id="bilde_søk_jobb" src="img/sok_jobb.jpg" alt="Søk jobb hos oss, bilde!">
+
   </body>
 </html>
