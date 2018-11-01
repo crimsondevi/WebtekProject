@@ -1,20 +1,13 @@
 body {
-  background-image: url("bilder/pizza8.png");
+  background-image: url("img/bakgrunn.jpg");
 
 
 }
 
-section{
-  background-color: white;
-  margin:auto;
-  display: -webkit-flex;
-  display: flex;
-  width:1000px;
-  height:1000px
-}
 .meny {
 background-color: black;
-padding:15px 20px;
+padding:2% ;
+
 
 }
 
@@ -26,8 +19,8 @@ background: rgba(0, 0, 0,0.85);
     position:relative;
     align-self: center;
 }
-  ul:last-child{
-    padding-left:50px;
+    .meny ul:last-child{
+    padding-left:85px;
 }
 
 #logo{
@@ -42,7 +35,7 @@ background: rgba(0, 0, 0,0.85);
 
 }
 
-ul a {
+.meny ul a {
     padding: 60px;
     color: white;
     text-decoration: none;
@@ -51,31 +44,39 @@ ul a {
 
 }
 
-ul a:hover {
+.meny ul a:hover {
   color: #E4A957;
 
 }
 
-footer{
-  position: relative;
-  font-family: helvetica;
-  background-color: black;
-  text-size:0.5em;
-  width:100%;
+footer {
+background-color: black;
+padding:0;
 
 }
 footer ul{
   list-style-type:none;
   display: table;
-  color: white;
   padding:20px;
   bottom: 0;
-  background-color: black;
+  color: white;
   height:30px;
-  text-align: center;
+  padding-left: 40%;
+  padding-right: 40%;
+
 }
 footer ul li{
   display: table;
   margin:auto;
+  text-align: center;
+}
+/* style for kontakt.html*/
 
+#kontakt{
+  background-color: white;
+  margin:auto;
+  display: -webkit-flex;
+  display: flex;
+  width:1000px;
+  height:1000px
 }
