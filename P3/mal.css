@@ -1,5 +1,5 @@
 body {
-  background-image: url("bakgrunn21.jpg");
+  background-image: url("img/bakgrunn.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,14 +7,10 @@ body {
 }
 
 .meny {
-<<<<<<< HEAD
-background-color: black;
-padding-bottom: 1%;
 
-=======
+padding-bottom: 1%;
 background-color: rgb(0,0,0,0.8);
 padding:2% ;
->>>>>>> 45256dd78ef3df9a33f26cba97d6a7091188e7e2
 
 
 
