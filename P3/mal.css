@@ -77,6 +77,40 @@ footer ul li{
   margin:auto;
   display: -webkit-flex;
   display: flex;
-  width:1000px;
-  height:1000px
+  width:70%;
+  height:100%;
+}
+.mapouter {
+  display: inline-flex;
+}
+
+#kontakth1{
+  padding:30px;
+}
+.innholdVenstre{
+  -webkit-flex:initial;
+  flex:initial;
+  width:200px;
+  margin-left:30px;
+}
+.innholdHøyre{
+  -webkit-flex:initial;
+  flex:initial;
+  width:500px;
+  margin-left:170px;
+}
+#kart{
+  margin-left: 290px;
+}
+.opplysninger{
+  margin-left: 205px;
+  margin-top:-200px;
+}
+#knapp{
+  background-color: black;
+  color: white;
+  width:60px;
+  height: 35px;
+  margin-top: 20px;
+  border-color: black;
 }
