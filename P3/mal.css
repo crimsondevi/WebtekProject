@@ -1,12 +1,17 @@
 body {
   background-image: url("img/bakgrunn.jpg");
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
 .meny {
-background-color: black;
+
+padding-bottom: 1%;
+background-color: rgb(0,0,0,0.8);
 padding:2% ;
+
 
 
 }
@@ -18,25 +23,29 @@ background: rgba(0, 0, 0,0.85);
     list-style-type: none;
     position:relative;
     align-self: center;
-}
-    .meny ul:last-child{
-    padding-left:8%;
+    padding-left: 0px;
+
+
 }
 
 #logo{
-  width:10%;
+  width:130px;
+  padding-top: 2%;
 
 }
-
-.meny ul li {
+#logo2{
+  width:130px;
+  padding: 2%;
+}
+.meny li{
     display: inline;
-    left:10opx;
+    margin-top: 0.5%;
+    font-size: 20px;
 
 
-}
-
+ }
 .meny ul a {
-    padding: 60px;
+    padding: 3%;
     color: white;
     text-decoration: none;
     font-size: 1.3em;
@@ -69,38 +78,105 @@ footer ul li{
   display: table;
   margin:auto;
   text-align: center;
+
 }
+.dropbtn {
+  position: absolute;
+  top:0;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    display: none;
+    width:60px;
+    height:60px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* linkene inni dropdownmenyen */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Endrer fargen på linkene når musa er over */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/*viser dropdownmenyen når musa er over */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* ENdrer fargen på knappen når musa er over */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+#logo2{
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .meny ul     { display: none; }
+  .dropbtn { display: inline-block; }
+  #logo2  { display: inline-block; }
+
+
 /* style for kontakt.html*/
 
 #kontakt{
   background-color: white;
   margin:auto;
-  display: -webkit-flex;
-  display: flex;
-  width:70%;
+  width:80%;
   height:100%;
 }
 .mapouter {
-  display: inline-flex;
+  display: inline-block;
+  text-align:right;
+  height:500px;
+  width:500px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:500px;
 }
 
 #kontakth1{
-  padding:30px;
+  padding:10px;
 }
+
 .innholdVenstre{
-  -webkit-flex:initial;
-  flex:initial;
+  display: inline-block;
   width:200px;
   margin-left:30px;
+  margin-bottom: 100px;
 }
 .innholdHøyre{
-  -webkit-flex:initial;
-  flex:initial;
+  display: inline-block;
   width:500px;
-  margin-left:170px;
+  margin-left:200px;
+
+
 }
 #kart{
-  margin-left: 290px;
+  margin-left:300px;
+  padding:35px;
 }
 .opplysninger{
   margin-left: 205px;
@@ -113,4 +189,40 @@ footer ul li{
   height: 35px;
   margin-top: 20px;
   border-color: black;
+}
+
+#søkJobb {
+  background-color: white;
+  margin:auto;
+  margin-top: 100px;
+  width:1000px;
+  height:700px;
+}
+
+.info{
+  width:100%;
+  padding: 1%;
+
+}
+
+.skjema{
+  display: inline-block;
+  width:200px;
+  margin-left:30px;
+}
+
+.bilde_sok_jobb{
+  display: inline-block;
+  width:500px;
+  margin-left:170px;
+}
+#omoss{
+  background-color: white;
+  margin:auto;
+  width:1000px;
+  height:800px;
+}
+.innhold{
+  padding-left: 3%;
+  padding-top: 2%;
 }
