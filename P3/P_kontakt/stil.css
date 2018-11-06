@@ -1,0 +1,101 @@
+body {
+  background-image: url("bilder/pizza8.png");
+
+}
+.mapouter {
+  display: inline-flex;
+}
+
+section{
+  background-color: white;
+  margin:auto;
+  display: -webkit-flex;
+  display: flex;
+  width:1000px;
+  height:1000px
+}
+.meny {
+background-color: black;
+padding:15px 20px;
+
+background: rgba(0, 0, 0,0.85);
+}
+
+h1{
+  padding:30px;
+}
+
+
+ul {
+    list-style-type: none;
+    position:relative;
+    text-align:center;
+
+
+}
+
+ul li {
+    display: inline;
+}
+
+ul a {
+    padding: 60px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-style: oblique;
+
+}
+
+ul a:hover {
+  color: #E4A957;
+
+}
+.innholdVenstre{
+  -webkit-flex:initial;
+  flex:initial;
+  width:200px;
+  margin-left:30px;
+}
+.innholdHøyre{
+  -webkit-flex:initial;
+  flex:initial;
+  width:500px;
+  margin-left:170px;
+}
+#kart{
+  margin-left: 290px;
+}
+.opplysninger{
+  margin-left: 205px;
+  margin-top:-200px;
+}
+#knapp{
+  background-color: black;
+  color: white;
+  width:60px;
+  height: 35px;
+  margin-top: 20px;
+  border-color: black;
+}
+
+footer{
+  position: relative;
+  font-family: helvetica;
+  background-color: black;
+  text-size:0.5em;
+}
+footer ul{
+  list-style-type:none;
+  display: table;
+  color: white;
+  padding:20px;
+  bottom: 0;
+  width:100%;
+  background-color: black;
+  height:30px;
+}
+footer ul li{
+  display: table;
+  margin:auto;
+}

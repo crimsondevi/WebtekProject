@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Søk jobb</title>
+      <link rel="stylesheet" type="text/css" href="mal.css">
+    <style>
+
+
+    #søkJobb{
+      background-color: white;
+      margin:10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    .info{
+      padding-top: 3%;
+      margin-left: 5%;
+    }
+    #skjema{
+      margin-left: 5%;
+      margin-right: 0%;
+      padding-bottom: 2%;
+    }
+    #bilde_søk_jobb{
+      width:20%;
+      position: absolute;
+      bottom: -5%;
+      right:25%;
+
+    }
+    </style>
+  </head>
+  <body>
+    <div class="meny">
+                <ul>
+
+
+                    <li><a href="oppgave1.aspx">Meny/bestill</a></li>
+                    <li><a href="oppgave2.aspx">Om resturanten</a></li>
+                    <img id="logo" src="img/logo.pizza.jpg" alt="logo" width="70px" height="70px">
+                    <li><a href="oppgave3.aspx">Ta kontakt</a></li>
+                    <li><a href="kommentering.aspx">Søk jobb</a></li>
+
+                </ul>
+
+
+
+            </div>
+
+  </section>
+
+  <section id="søkJobb">
+    <div class="info">
+    <h2>Ønsker du jobb hos Pizzasteikeren?</h2>
+    <p> Vi er for øyeblikket ute etter både deltids-og fastjobb. Disse jobbene vil være å servere og ha ansvar for utlevering. Den nedre aldersgrensen for å søke er fyllte 16 år. Fyll inn skjemaet under om du ønsker jobb hos oss. <p>
+    <p> Vi setter pris på erfaring innen servicebransjen. Om vi mener at du passer jobben, vil du videre bli kallet inn til intervju. Lykke til! </p><br>
+  </div>
+  <div id="skjema">
+    <form method="GET">
+      <h3> Søk jobb: </h2>
+      <p> Husk å fylle inn alle felt i skjemaet og last opp en CV.</p>
+      <br>
+      <label for="navn"> Navn: </label><br>
+      <input type="text" id="navn" name="navn" placeholder="Navn Navnesen" required pattern="[A-Za-z\s]+"><br>
+      <br>
+      <label for="E-post">E-post:</label><br>
+      <input type="email" id="E-post" name="E-post" placeholder=" navn.navnesen@eksempel.no" required><br>
+      <br>
+      <label for="Fødselsdato"> Fødselsdato:</label> <br>
+      <input type="date" id= "Fødselsdato" max="2002-12-31" name="Fødselsdato" required><br>
+      <br>
+      <label for="søknadsTekst"> Søknadstekst:</label><br><br>
+      <textarea type="text" id="søknadsTekst"></textarea><br>
+      <br>
+      <label for="fileupload"> Last opp en CV:</label><br>
+      <br>
+      <input type="file" name="fileupload" value="fileupload" id="fileupload" required><br>
+      <br>
+      <input type="submit" value="Send inn søknad">
+    </form>
+  </div>
+  <img id="bilde_søk_jobb" src="img/sok_jobb.jpg" alt="Søk jobb hos oss, bilde!">
+</section>
+
+  <footer>
+    <ul>
+      <li>
+        Kontakt oss:
+      </li>
+      <br />
+      <li>
+        Epostadresse: pizza@martin.lange.no
+      </li>
+      <li>
+        tlf: +47 959 40 838
+      </li>
+      <li>
+        Facebook: @Pizzastekeren
+      </li>
+      <li>
+
+      </li>
+    </ul>
+  </footer>
+
+
+  </body>
+</html>
