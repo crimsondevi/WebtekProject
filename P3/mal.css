@@ -1,20 +1,12 @@
 body {
-  background-image: url("bakgrunn21.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("img/bakgrunn.jpg");
+
 
 }
 
 .meny {
-<<<<<<< HEAD
 background-color: black;
 padding-bottom: 1%;
-
-=======
-background-color: rgb(0,0,0,0.8);
-padding:2% ;
->>>>>>> 45256dd78ef3df9a33f26cba97d6a7091188e7e2
 
 
 
@@ -144,43 +136,32 @@ footer ul li{
 #kontakt{
   background-color: white;
   margin:auto;
-  width:80%;
+  display: -webkit-flex;
+  display: flex;
+  width:70%;
   height:100%;
 }
 .mapouter {
-  display: inline-block;
-  text-align:right;
-  height:500px;
-  width:500px;
-}
-
-.gmap_canvas {
-  overflow:hidden;
-  background:none!important;
-  height:500px;
-  width:500px;
+  display: inline-flex;
 }
 
 #kontakth1{
-  padding:10px;
+  padding:30px;
 }
-
 .innholdVenstre{
-  display: inline-block;
+  -webkit-flex:initial;
+  flex:initial;
   width:200px;
   margin-left:30px;
-  margin-bottom: 100px;
 }
 .innholdHøyre{
-  display: inline-block;
+  -webkit-flex:initial;
+  flex:initial;
   width:500px;
-  margin-left:200px;
-
-
+  margin-left:170px;
 }
 #kart{
-  margin-left:300px;
-  padding:35px;
+  margin-left: 290px;
 }
 .opplysninger{
   margin-left: 205px;
@@ -193,40 +174,4 @@ footer ul li{
   height: 35px;
   margin-top: 20px;
   border-color: black;
-}
-
-#søkJobb {
-  background-color: white;
-  margin:auto;
-  margin-top: 100px;
-  width:1000px;
-  height:700px;
-}
-
-.info{
-  width:100%;
-  padding: 1%;
-
-}
-
-.skjema{
-  display: inline-block;
-  width:200px;
-  margin-left:30px;
-}
-
-.bilde_sok_jobb{
-  display: inline-block;
-  width:500px;
-  margin-left:170px;
-}
-#omoss{
-  background-color: white;
-  margin:auto;
-  width:1000px;
-  height:800px;
-}
-.innhold{
-  padding-left: 3%;
-  padding-top: 2%;
 }
