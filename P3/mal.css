@@ -147,12 +147,24 @@ footer ul li{
     margin-top: 5%;
     margin-bottom: 5%;
     color: #7a4d1f;
+    text-align: center;
 
   }
   #tekst{
     width: 80%;
     text-align: center;
     margin:auto;
+  }
+  #åpningstider {list-style-type: none;}
+  }
+  #åpningstider{
+    text-align: center;
+  }
+  #tekst{
+    text-align: center;
+  }
+  #overskrift{
+    text-align: center;
   }
   #overskrift{
     text-align: center;
@@ -221,12 +233,11 @@ footer ul li{
     float: right;
     margin-right: 5%;
 
-
-
   }
   .opplysninger{
     margin-left: 205px;
     margin-top:-200px;
+
 
 
   }
@@ -260,19 +271,20 @@ footer ul li{
   .info{
     width:90%;
     padding-top: 2%;
-    padding-left: 2%;
+    padding-left: 5%;
 
   }
 
   #skjema{
-    margin-left:2%;
-    margin-bottom: 2%;
+    margin-left:5%;
+    padding-bottom: 3%;
   }
 
 #bilde_søk_jobb{
   position: absolute;
   right:19%;
   top:25%;
+  width:25%;
 
 }
 
