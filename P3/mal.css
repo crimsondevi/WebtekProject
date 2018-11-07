@@ -58,8 +58,11 @@ padding: 2%;
 }
 
 footer {
-background-color: rgb(0,0,0,0.8);
-padding:0;
+  background-color:  rgb(249, 249, 235,0.9);
+  margin:10%;
+  margin-top: 0;
+  color: #7a4d1f;
+
 
 }
 footer ul{
@@ -67,15 +70,14 @@ footer ul{
   display: table;
   padding:20px;
   bottom: 0;
-  color: white;
+  color: #7a4d1f;
   height:30px;
   padding-left: 40%;
   padding-right: 40%;
+  margin-top: 0;
 
 }
 footer ul li{
-  display: table;
-  margin:auto;
   text-align: center;
 
 }
@@ -145,7 +147,7 @@ footer ul li{
     background-color:  rgb(249, 249, 235,0.9);
     margin:10%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom:0;
     color: #7a4d1f;
     text-align: center;
 
@@ -192,12 +194,12 @@ footer ul li{
   /* style for kontakt.html*/
 
   #kontakt{
-    position: relative;
     background-color:  rgb(249, 249, 235,0.9);
     margin:10%;
     margin-top: 5%;
-    margin-bottom: 5%;;
+    margin-bottom: 0;
     color: #7a4d1f;
+    height: 600px;
   }
   .mapouter {
     display: inline-block;
@@ -237,6 +239,7 @@ footer ul li{
   .opplysninger{
     margin-left: 205px;
     margin-top:-200px;
+    padding-bottom: 3%;
 
 
 
@@ -257,7 +260,7 @@ footer ul li{
     background-color:  rgb(249, 249, 235,0.9);
     margin:10%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 0;
     color: #7a4d1f;
   }
   #submit{
@@ -287,6 +290,18 @@ footer ul li{
   width:25%;
 
 }
+
+#linje{
+    margin:0;
+    background-color: #7a4d1f;
+    border:0;
+    height:1px;
+    width: 90%;
+    margin-right: 3%;
+    margin-left: 3%;
+
+}
+
 
 
 
