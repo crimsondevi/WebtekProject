@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="mal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <title></title>
   </head>
   <body>
@@ -41,15 +40,15 @@
         <h1 id="kontakth1">Kontakt oss</h1>
 
         <h5>Navn:</h5>
-      <input type="text" name="navn" required/>
+      <input type="text" name="navn" id="navn"/>
 
         <h5>Email:</h5>
 
-        <input type="email" name="emailadresse" required/>
+        <input type="email" name="emailadresse" id="mail"/>
 
         <h5>Kommentar:</h5>
-        <textarea name="kommentar" cols="40" rows="5"></textarea>
-        <input type="submit" value="Send" id="knapp" />
+        <textarea name="kommentar" id="kommentar" cols="40" rows="5"></textarea>
+        <input type="submit" value="Send" id="knapp" onclick="sendMail()" />
         </div>
 
         <div class="innholdHøyre">
@@ -91,7 +90,7 @@
             </li>
           </ul>
         </footer>
-        <script src="script.js"></script>
+        <script src="scripts/script.js"></script>
 
   </body>
 </html>
