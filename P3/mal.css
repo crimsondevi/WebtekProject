@@ -7,14 +7,11 @@ body {
 }
 
 .meny {
-
 padding-bottom: 1%;
 background-color: rgb(0,0,0,0.8);
 padding: 2%;
 
-}
 
-background: rgba(0, 0, 0,0.85);
 }
 
  .meny ul {
@@ -56,8 +53,12 @@ background: rgba(0, 0, 0,0.85);
 
 }
 
+.meny ul a:active {
+  text-decoration: underline;
+}
+
 footer {
-background-color: black;
+background-color: rgb(0,0,0,0.8);
 padding:0;
 
 }
@@ -80,26 +81,27 @@ footer ul li{
 }
 .dropbtn {
   position: absolute;
-  top:0;
-    background-color: #4CAF50;
+  bottom:10px;
+    background-color: #4d4d4d;
     color: white;
-    font-size: 16px;
+    font-size: 200%;
     border: none;
     display: none;
-    width:60px;
-    height:60px;
+    width:70px;
+    height:70px;
 }
 
 
 .dropdown {
     position: relative;
+    bottom:10px;
     display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #d9d9d9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -114,13 +116,13 @@ footer ul li{
 }
 
 /* Endrer fargen på linkene når musa er over */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #bfbfbf;}
 
 /*viser dropdownmenyen når musa er over */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* ENdrer fargen på knappen når musa er over */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #404040;}
 
 
 #logo2{
@@ -132,94 +134,139 @@ footer ul li{
   .dropbtn { display: inline-block; }
   #logo2  { display: inline-block; }
 
-
-/* style for kontakt.html*/
-
-#kontakt{
-  background-color: white;
-  margin:auto;
-  width:80%;
-  height:100%;
-}
-.mapouter {
-  display: inline-block;
-  text-align:right;
-  height:500px;
-  width:500px;
 }
 
-.gmap_canvas {
-  overflow:hidden;
-  background:none!important;
-  height:500px;
-  width:500px;
-}
-
-#kontakth1{
-  padding:10px;
-}
-
-.innholdVenstre{
-  display: inline-block;
-  width:200px;
-  margin-left:30px;
-  margin-bottom: 100px;
-}
-.innholdHøyre{
-  display: inline-block;
-  width:500px;
-  margin-left:200px;
 
 
-}
-#kart{
-  margin-left:300px;
-  padding:35px;
-}
-.opplysninger{
-  margin-left: 205px;
-  margin-top:-200px;
-}
-#knapp{
-  background-color: black;
-  color: white;
-  width:60px;
-  height: 35px;
-  margin-top: 20px;
-  border-color: black;
-}
 
-#søkJobb {
-  background-color: white;
-  margin:auto;
-  margin-top: 100px;
-  width:1000px;
-  height:700px;
-}
+/*style for om oss*/
+#omOss{
+    background-color:  rgb(249, 249, 235,0.9);
+    margin:10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #7a4d1f;
 
-.info{
-  width:100%;
-  padding: 1%;
+  }
+  #tekst{
+    width: 80%;
+    text-align: center;
+    margin:auto;
+  }
+  #overskrift{
+    text-align: center;
+    padding-top: 3%;
+  }
+  #pza2{
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+  }
+  #pza{
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-top: 5%;
+
+}
+#slideshow{
+  margin-right: 20%;
+  margin-left: 20%;
 
 }
 
-.skjema{
-  display: inline-block;
-  width:200px;
-  margin-left:30px;
-}
 
-.bilde_sok_jobb{
-  display: inline-block;
-  width:500px;
-  margin-left:170px;
-}
-#omoss{
-  background-color: white;
-  margin:auto;
-  width:1000px;
-  height:800px;
-}
+  /* style for kontakt.html*/
+
+  #kontakt{
+    background-color:  rgb(249, 249, 235,0.9);
+    margin:10%;
+    margin-top: 5%;
+    margin-bottom: 5%;;
+    color: #7a4d1f;
+  }
+  .mapouter {
+    display: inline-block;
+    text-align:right;
+    height:500px;
+    width:500px;
+  }
+
+  .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:500px;
+  }
+
+  #kontakth1{
+    padding:10px;
+  }
+
+  .innholdVenstre{
+    display: inline-block;
+    width:200px;
+    margin-left:30px;
+    margin-bottom: 100px;
+  }
+  .innholdHøyre{
+    display: inline-block;
+    width:500px;
+    margin-left:200px;
+
+
+  }
+  #kart{
+    margin-left:300px;
+    padding:35px;
+  }
+  .opplysninger{
+    margin-left: 205px;
+    margin-top:-200px;
+  }
+  #knapp{
+    background-color: #4d4d4d;
+    color: white;
+    width:60px;
+    height: 35px;
+    margin-top: 20px;
+    border-color: #4d4d4d;
+  }
+
+  /*style for søkjobb */
+
+  #søkJobb{
+    background-color:  rgb(249, 249, 235,0.9);
+    margin:10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #7a4d1f;
+  }
+  #submit{
+    background-color: #4d4d4d;
+    color: white;
+    width:60px;
+    height: 35px;
+    margin-top: 20px;
+    border-color: #4d4d4d;
+  }
+  .info{
+    width:90%;
+    margin-left: 2%;;
+
+  }
+
+  .skjema{
+    display: inline-block;
+    width:40%;
+    margin-left:2%;;
+  }
+
+  .bilde_sok_jobb{
+    display: inline-block;
+    width:500px;
+    margin-left:170px;
+  }
+
 .innhold{
   padding-left: 3%;
   padding-top: 2%;

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Pizzastekeren</title>
     <link rel="stylesheet" type="text/css" href="mal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
 
   .collage{
@@ -16,13 +17,14 @@
         .row {
       display: flex;
       flex-wrap: wrap;
-      padding: 0 8px;
+      padding: 10px 8px;
 
     }
     .column {
       flex: 25%;
       max-width: 35%;
-      padding: 0 6px
+      padding: 10px 6px;
+
 
 
     }
@@ -75,18 +77,20 @@
 
     <div class=liste>
 
-  <img id="logo2" src="img/logo.pizza.jpg" alt="logo">
 
-                <ul>
-                    <li><img id="logo" src="img/logo.pizza.jpg" alt="logo"></li>
-                    <li><a href="oppgave1.aspx">Meny/bestill</a></li>
-                    <li><a href="omoss.html">Om resturanten</a></li>
-                    <li><a href="kontakt.html">Ta kontakt</a></li>
-                    <li><a href="sok_jobb.html">Søk jobb</a></li>
-                </ul>
+
+      <a href="hjem.html"><input type="image" id="logo2" alt="Login" src="img/logo.pizza.jpg"></input></a>
+
+                      <ul>
+                          <a href="hjem.html"><input type="image" id="logo" alt="Login" src="img/logo.pizza.jpg"></input></a>
+                          <li><a href="oppgave1.aspx">Meny/bestill</a></li>
+                          <li><a href="omoss.html">Om resturanten</a></li>
+                          <li><a href="kontakt.html">Ta kontakt</a></li>
+                          <li><a href="sok_jobb.html">Søk jobb</a></li>
+                      </ul>
 
   <div class="dropdown">
-      <button class="dropbtn">...</button>
+    <button class="dropbtn"><i class="fa fa-bars"></i></button>
         <div class="dropdown-content">
     <a href="oppgave1.aspx">Meny/bestill</a>
     <a href="omoss.html">Om resturanten</a>
@@ -137,6 +141,7 @@
     </li>
   </ul>
 </footer>
+
 
 
 </body>
