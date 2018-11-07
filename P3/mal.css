@@ -94,13 +94,14 @@ footer ul li{
 
 .dropdown {
     position: relative;
-    bottom:10px;
+    bottom:15px;
     display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
+    top:0px;
     background-color: #d9d9d9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -160,6 +161,7 @@ footer ul li{
   #pza2{
     padding-bottom: 5%;
     padding-top: 5%;
+    margin-left: 4%;
 
   }
   #pza{
@@ -178,6 +180,7 @@ footer ul li{
   /* style for kontakt.html*/
 
   #kontakt{
+    position: relative;
     background-color:  rgb(249, 249, 235,0.9);
     margin:10%;
     margin-top: 5%;
@@ -187,41 +190,45 @@ footer ul li{
   .mapouter {
     display: inline-block;
     text-align:right;
-    height:500px;
-    width:500px;
+    height:10%;
+    width:10%;
+
   }
 
   .gmap_canvas {
     overflow:hidden;
     background:none!important;
-    height:500px;
-    width:500px;
+    height:10%;
+    width:10%;
   }
 
   #kontakth1{
-    padding:10px;
+    margin-top:5%;
+
   }
 
   .innholdVenstre{
     display: inline-block;
-    width:200px;
-    margin-left:30px;
+    width:30%;
+    margin-left:2%;;
     margin-bottom: 100px;
+    top:1%;;
   }
   .innholdHøyre{
     display: inline-block;
-    width:500px;
-    margin-left:200px;
+    width:60%;
+    margin-top:2%;
+    float: right;
+    margin-right: 5%;
 
 
-  }
-  #kart{
-    margin-left:300px;
-    padding:35px;
+
   }
   .opplysninger{
     margin-left: 205px;
     margin-top:-200px;
+
+
   }
   #knapp{
     background-color: #4d4d4d;
@@ -235,6 +242,7 @@ footer ul li{
   /*style for søkjobb */
 
   #søkJobb{
+    position: relative;
     background-color:  rgb(249, 249, 235,0.9);
     margin:10%;
     margin-top: 5%;
@@ -251,21 +259,24 @@ footer ul li{
   }
   .info{
     width:90%;
-    margin-left: 2%;;
+    padding-top: 2%;
+    padding-left: 2%;
 
   }
 
-  .skjema{
-    display: inline-block;
-    width:40%;
-    margin-left:2%;;
+  #skjema{
+    margin-left:2%;
+    margin-bottom: 2%;
   }
 
-  .bilde_sok_jobb{
-    display: inline-block;
-    width:500px;
-    margin-left:170px;
-  }
+#bilde_søk_jobb{
+  position: absolute;
+  right:19%;
+  top:25%;
+
+}
+
+
 
 .innhold{
   padding-left: 3%;
