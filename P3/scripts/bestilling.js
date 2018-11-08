@@ -1,5 +1,101 @@
 
-var liste=document.getElementById("liste");
+
+const retter=[
+  {
+  pizza:'Margherita',
+  fyll:'Tomatsaus, fersk mozarella, basilikum',
+  pris: 150
+},
+{
+  pizza: 'Vesuvio',
+  fyll:'Tomatsaus, ost, skinke',
+  pris: 170
+},
+{
+  pizza: 'Parma',
+  fyll:'Parmaskinke, løk, parmesan, pesto',
+  pris: 180
+},
+{
+  pizza: 'Napoli',
+  fyll:'Pepperoni, paprika, ananas',
+  pris: 180
+},
+{
+  pizza: 'Hawaii',
+  fyll:'Skinke, ananas',
+  pris: 170
+},
+{
+  pizza: 'Singsaker',
+  fyll:'Kjøttdeig, løk, paprika, champignon',
+  pris: 190
+},
+{
+  pizza: 'Mjøndalen Spesial',
+  fyll: 'Biff, pepperoni, paprika',
+  pris: 200
+},
+{
+  pizza: 'Kebabpizza',
+  fyll:  'Biff, pepperoni, paprika',
+  pris: 190
+},
+{
+  pizza:'Vegetar',
+  fyll:'Paprika, ananas, champignon, løk, oliven',
+  pris: 160
+},
+{
+  pizza:'en god en',
+  fyll: 'Masse digg',
+  pris: 200
+}
+];
+;
+
+/*lager menyen, 10 elementer */
+
+for ( var i=0; i<10; i++){
+
+
+  var tittel=document.createElement("h2");
+  tittel.className = ('tittel');
+  var navn=document.createTextNode((1+i)+'.'+retter[i].pizza);
+  tittel.appendChild(navn);
+  document.getElementById('pizza').appendChild(tittel);
+
+
+  var paragraf = document.createElement("p");
+  paragraf.className=('fyll');
+  var tekst = document.createTextNode(retter[i].fyll);
+  paragraf.appendChild(tekst);
+  document.getElementById('pizza').appendChild(paragraf);
+
+  var pris=document.createElement('p');
+  pris.className=("pris");
+  var pris1=document.createTextNode(retter[i].pris +',-');
+  pris.appendChild(pris1);
+  document.getElementById('pizza').appendChild(pris);
+
+  var btn=document.createElement('button');
+  document.getElementById('pizza').appendChild(btn);
+
+  var linje=document.createElement('hr');
+  linje.className=("linje");
+  document.getElementById('pizza').appendChild(linje);
+
+
+}
+
+
+
+
+
+
+
+
+/*var liste=document.getElementById("liste");
 
 function createShoppingElement(i) {
   element.addEventListener("click",changeDisplay(element));
@@ -10,7 +106,7 @@ for(var i=0;i++;i<10) {
 }
 
 function changeDisplay(element) {
-  
+
 }
 
 function changeDisplay1(){
@@ -118,7 +214,7 @@ function changeDisplay2(){
 
 
 
-
+/*
 
 function changeDisplayagain1(){
   document.getElementById("velg1").style.display="inline";
@@ -171,3 +267,4 @@ function changeDisplayagain10(){
   document.getElementById("velg10").style.display="inline";
   document.getElementById("angre10").style.display="none";
 }
+*/
