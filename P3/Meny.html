@@ -5,154 +5,169 @@
     <meta charset="utf-8" />
     <title>Meny</title>
     <link rel="stylesheet" type="text/css" href="mal.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     #pizzamenu{
-      position: relative;
-      left:30%;
-      background-color: rgba(0,0,0,0.85);
-      padding-top:15px;
-      padding-bottom:15px;
-      margin-top:15px;
-      margin-bottom:15px;
-      width: 40%;
+    text-align: center;
+    margin: 5%;
+    margin-left: 0;
+    margin-bottom: 0;
     }
     #pizza{
       font-family:"Helvetica";
-      position: relative;
-      padding: 5px;
-      padding-left: 10px;
-      margin:15px;
-      background-color: rgba(256,256,256,0.8);
+      padding: 20px;
+      margin-top:2%;
 
     }
-    #pinnhold{
-      float: left;
-    }
     #ptittel{
+      text-align: center;
+      margin-top:2%;
 
     }
     #pbeskrivelse{
+      text-align: center;
+      margin-bottom:2%;
+
 
     }
     #ppris{
       text-align: right;
-      margin-right: 15px;
+      position: absolute;
+      top:2%;
+    }
+    #pris{
+      position: absolute;
+      align-self: right;
+      top:4%;
+    }
+    #menylinje{
+      margin:0;
+      background-color: #7a4d1f;
+      border:0;
+      height:2px;
+      width: 80%;
+      margin:auto;
     }
     </style>
 </head>
 <body>
   <div class="meny">
-              <ul>
 
-                  <li><a href="oppgave1.aspx">Meny/bestill</a></li>
-
-                  <li><a href="oppgave2.aspx">Om resturanten</a></li>
-                  <li>
-                    <img id="logo" src="bilder/pizza5.png" width="100px"/>
-                  </li>
-                  <li><a href="oppgave3.aspx">Ta kontakt</a></li>
-                  <li><a href="kommentering.aspx">Søk jobb</a></li>
-
-              </ul>
+  <div class=liste>
 
 
-          </div>
-          <section>
+
+    <a href="hjem.html"><input type="image" id="logo2" alt="Login" src="img/logopizza.png"></input></a>
+
+                    <ul>
+                        <a href="hjem.html"><input type="image" id="logo" alt="Login" src="img/logopizza.png"></input></a>
+                        <li><a href="Meny.html">Meny/bestill</a></li>
+                        <li><a href="omoss.html">Om restauranten</a></li>
+                        <li><a href="kontakt.html">Kontakt oss</a></li>
+                        <li><a href="sok_jobb.html">Søk jobb</a></li>
+                    </ul>
+
+<div class="dropdown">
+  <button class="dropbtn"><i class="fa fa-bars"></i></button>
+      <div class="dropdown-content">
+  <a href="Meny.html">Meny/bestill</a>
+  <a href="omoss.html">Om resturanten</a>
+  <a href="kontakt.html">Ta kontakt</a>
+    <a href="sok_jobb.html">Søk jobb</a>
+</div>
+</div>
+</div>
+<hr>
+      </div>
+</div>
+
+          <section id="meny">
     <div id="pizzamenu">
         <div id="pizza">
-          <div id="pinnhold">
         <h3 id="ptittel">1. Margherita</h3>
         <p id="pbeskrivelse">Tomatsaus, fersk mozarella, basilikum</p>
-      </div>
-        <p id="ppris">Liten: 109,-</p><p id="ppris"> Stor: 159,-</p>
+        <p id="ppris">Liten: 109,-</p><p id="pris"> Stor: 159,-</p>
         </div>
+
+        <hr id="menylinje">
         <div id="pizza">
-          <div id="pinnhold">
             <h3 id="ptittel">2. Vesuvio</h3>
             <p id="pbeskrivelse">Tomatsaus, ost, skinke</p>
-          </div>
-          <p id="ppris">Liten: 119,-</p><p id="ppris"> Stor: 169,-</p>
+          <p id="ppris">Liten: 119,-</p><p id="pris"> Stor: 169,-</p>
         </div>
+          <hr id="menylinje">
         <div id="pizza">
-          <div id="pinnhold">
             <h3 id="ptittel">3. Parma</h3>
             <p id="pbeskrivelse">Parmaskinke, løk, parmesan, pesto</p>
-          </div>
-          <p id="ppris">Liten: 149,-</p><p id="ppris"> Stor: 199,-</p>
+          <p id="ppris">Liten: 149,-</p><p id="pris"> Stor: 199,-</p>
         </div>
+          <hr id="menylinje">
         <div id="pizza">
-          <div id="pinnhold">
             <h3 id="ptittel">4. Napoli</h3>
             <p id="pbeskrivelse">Pepperoni, paprika, ananas</p>
-          </div>
-          <p id="ppris">Liten: 129,-</p><p id="ppris"> Stor: 179,-</p>
+          <p id="ppris">Liten: 129,-</p><p id="pris"> Stor: 179,-</p>
         </div>
+          <hr id="menylinje">
         <div id="pizza">
-          <div id="pinnhold">
             <h3 id="ptittel">5. Hawaii</h3>
             <p id="pbeskrivelse">Skinke, ananas</p>
-          </div>
-          <p id="ppris">Liten: 129,-</p><p id="ppris"> Stor: 179,-</p>
+          <p id="ppris">Liten: 129,-</p><p id="pris"> Stor: 179,-</p>
         </div>
+          <hr id="menylinje">
         <div id="pizza">
-          <div id="pinnhold">
             <h3 id="ptittel">6. Singsaker</h3>
             <p id="pbeskrivelse">Kjøttdeig, løk, paprika, champignon</p>
-          </div>
-          <p id="ppris">Liten: 139,-</p><p id="ppris"> Stor: 189,-</p>
+          <p id="ppris">Liten: 139,-</p><p id="pris"> Stor: 189,-</p>
         </div>
+          <hr id="menylinje">
         <div id="pizza">
-          <div id="pinnhold">
             <h3 id="ptittel">7. Mjøndalen Spesial</h3>
             <p id="pbeskrivelse">Biff, pepperoni, paprika</p>
-          </div>
-          <p id="ppris">Liten: 149,-</p><p id="ppris"> Stor: 199,-</p>
+          <p id="ppris">Liten: 149,-</p><p id="pris"> Stor: 199,-</p>
         </div>
+          <hr id="menylinje">
         <div id="pizza">
-          <div id="pinnhold">
             <h3 id="ptittel">8. Napoli</h3>
             <p id="pbeskrivelse">Kjøttdeig, bacon,  løk</p>
-          </div>
-          <p id="ppris">Liten: 139,-</p><p id="ppris"> Stor: 189,-</p>
+          <p id="ppris">Liten: 139,-</p><p id="pris"> Stor: 189,-</p>
         </div>
+          <hr id="menylinje">
         <div id="pizza">
-          <div id="pinnhold">
             <h3 id="ptittel">9. Kebabpizza</h3>
             <p id="pbeskrivelse">Biff, løk, champignon, salat, tomat, hvitløkssaus</p>
-          </div>
-          <p id="ppris">Liten: 159,-</p><p id="ppris"> Stor: 209,-</p>
+          <p id="ppris">Liten: 159,-</p><p id="pris"> Stor: 209,-</p>
         </div>
+          <hr id="menylinje">
         <div id="pizza">
-          <div id="pinnhold">
             <h3 id="ptittel">10. Vegetar</h3>
             <p id="pbeskrivelse">Paprika, ananas, champignon, løk, oliven</p>
-          </div>
-          <p id="ppris">Liten: 109,-</p><p id="ppris"> Stor: 159,-</p>
+          <p id="ppris">Liten: 109,-</p><p id="pris"> Stor: 159,-</p>
         </div>
-    </div>
   </section>
 
+  <footer>
+  <hr id="linje">
+    <ul>
 
-        <footer>
-          <ul>
-            <li>
-              Kontakt oss:
-            </li>
-            <br />
-            <li>
-              Epostadresse
-            </li>
-            <li>
-              tlf.nr
-            </li>
-            <li>
-              Facebook
-            </li>
-            <li>
+      <li>
+        Kontakt oss:
+      </li>
+      <br />
+      <li>
+        Epostadresse: pizza@martin.lange.no
+      </li>
+      <li>
+        tlf: +47 959 40 838
+      </li>
+      <li>
+        Facebook: @Pizzastekeren
+      </li>
+      <li>
 
-            </li>
-          </ul>
-        </footer>
+      </li>
+    </ul>
+  </footer>
+
 
 </body>
 </html>
