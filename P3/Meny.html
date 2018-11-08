@@ -1,9 +1,4 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Meny</title>
+@@ -7,40 +7,34 @@
     <link rel="stylesheet" type="text/css" href="mal.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -14,31 +9,45 @@
     margin-left: 0;
     margin-bottom: 0;
     }
+    #pizza{
     .pizza{
       font-family:"Helvetica";
       padding: 20px;
       margin-top:2%;
 
     }
+    #ptittel{
     .ptittel{
       text-align: center;
       margin-top:2%;
 
     }
+    #pbeskrivelse{
     .pbeskrivelse{
       text-align: center;
       margin-bottom:2%;
 
+
     }
+    #ppris{
+      text-align: right;
+      position: absolute;
+      top:2%;
+    }
+    #pris{
+      position: absolute;
+      align-self: right;
+      top:4%;
     .pris{
     text-align: center;
     }
+    #menylinje{
 
     .menylinje{
       margin:0;
       background-color: #7a4d1f;
       border:0;
-      height:2px;
+@ -48,7 +42,31 @@
       width: 80%;
       margin:auto;
     }
@@ -70,34 +79,11 @@
 </head>
 <body>
   <div class="meny">
-
-  <div class=liste>
-
-
-
-    <a href="hjem.html"><input type="image" id="logo2" alt="Login" src="img/logopizza.png"></input></a>
-
-                    <ul>
-                        <a href="hjem.html"><input type="image" id="logo" alt="Login" src="img/logopizza.png"></input></a>
-                        <li><a href="Meny.html">Meny/bestill</a></li>
-                        <li><a href="omoss.html">Om restauranten</a></li>
-                        <li><a href="kontakt.html">Kontakt oss</a></li>
-                        <li><a href="sok_jobb.html">Søk jobb</a></li>
-                    </ul>
-
-<div class="dropdown">
-  <button class="dropbtn"><i class="fa fa-bars"></i></button>
-      <div class="dropdown-content">
-  <a href="Meny.html">Meny/bestill</a>
-  <a href="omoss.html">Om resturanten</a>
-  <a href="kontakt.html">Ta kontakt</a>
-    <a href="sok_jobb.html">Søk jobb</a>
-</div>
-</div>
-</div>
+@ -80,69 +98,94 @@
 <hr>
       </div>
 </div>
+
     <div id="handlekurv">
       <ul id="liste">
       </ul>
@@ -105,6 +91,10 @@
     </div>
           <section id="meny">
     <div id="pizzamenu">
+        <div id="pizza">
+        <h3 id="ptittel">1. Margherita</h3>
+        <p id="pbeskrivelse">Tomatsaus, fersk mozarella, basilikum</p>
+        <p id="ppris">Liten: 109,-</p><p id="pris"> Stor: 159,-</p>
         <div class="pizza">
         <h3 class="ptittel" id="ptittel1">1. Margherita</h3>
         <p class="pbeskrivelse">Tomatsaus, fersk mozarella, basilikum</p>
@@ -113,6 +103,11 @@
         <button class="angre" id="angre1" onclick="changeDisplayagain1();"><i class="fa fa-close"></i> Fjern</button>
         </div>
 
+        <hr id="menylinje">
+        <div id="pizza">
+            <h3 id="ptittel">2. Vesuvio</h3>
+            <p id="pbeskrivelse">Tomatsaus, ost, skinke</p>
+          <p id="ppris">Liten: 119,-</p><p id="pris"> Stor: 169,-</p>
         <hr class="menylinje">
         <div class="pizza">
             <h3 class="ptittel" id="ptittel2" id="ptittel1">2. Vesuvio</h3>
@@ -121,6 +116,11 @@
           <button class="velg"  id="velg2" onclick="changeDisplay2();" >Velg <i class="fa fa-shopping-cart"></i></button>
           <button class="angre" id="angre2" onclick="changeDisplayagain2();"><i class="fa fa-close"></i> Fjern</button>
         </div>
+          <hr id="menylinje">
+        <div id="pizza">
+            <h3 id="ptittel">3. Parma</h3>
+            <p id="pbeskrivelse">Parmaskinke, løk, parmesan, pesto</p>
+          <p id="ppris">Liten: 149,-</p><p id="pris"> Stor: 199,-</p>
           <hr class="menylinje">
         <div class="pizza">
             <h3 class="ptittel" id="ptittel3">3. Parma</h3>
@@ -129,6 +129,11 @@
           <button class="velg"  id="velg3" onclick="changeDisplay3();" >Velg <i class="fa fa-shopping-cart"></i></button>
           <button class="angre" id="angre3" onclick="changeDisplayagain3();"><i class="fa fa-close"></i> Fjern</button>
         </div>
+          <hr id="menylinje">
+        <div id="pizza">
+            <h3 id="ptittel">4. Napoli</h3>
+            <p id="pbeskrivelse">Pepperoni, paprika, ananas</p>
+          <p id="ppris">Liten: 129,-</p><p id="pris"> Stor: 179,-</p>
           <hr class="menylinje">
         <div class="pizza">
             <h3 class="ptittel" id="ptittel4">4. Napoli</h3>
@@ -137,6 +142,11 @@
           <button class="velg"  id="velg4" onclick="changeDisplay4();" >Velg <i class="fa fa-shopping-cart"></i></button>
           <button class="angre" id="angre4" onclick="changeDisplayagain4();"><i class="fa fa-close"></i> Fjern</button>
         </div>
+          <hr id="menylinje">
+        <div id="pizza">
+            <h3 id="ptittel">5. Hawaii</h3>
+            <p id="pbeskrivelse">Skinke, ananas</p>
+          <p id="ppris">Liten: 129,-</p><p id="pris"> Stor: 179,-</p>
           <hr class="menylinje">
         <div class="pizza">
             <h3 class="ptittel" id="ptittel5">5. Hawaii</h3>
@@ -145,6 +155,11 @@
           <button class="velg"  id="velg5" onclick="changeDisplay5();" >Velg <i class="fa fa-shopping-cart"></i></button>
           <button class="angre" id="angre5" onclick="changeDisplayagain5();"><i class="fa fa-close"></i> Fjern</button>
         </div>
+          <hr id="menylinje">
+        <div id="pizza">
+            <h3 id="ptittel">6. Singsaker</h3>
+            <p id="pbeskrivelse">Kjøttdeig, løk, paprika, champignon</p>
+          <p id="ppris">Liten: 139,-</p><p id="pris"> Stor: 189,-</p>
           <hr class="menylinje">
         <div class="pizza">
             <h3 class="ptittel" id="ptittel6">6. Singsaker</h3>
@@ -153,6 +168,17 @@
           <button class="velg"  id="velg6" onclick="changeDisplay6();" >Velg <i class="fa fa-shopping-cart"></i></button>
           <button class="angre" id="angre6" onclick="changeDisplayagain6();"><i class="fa fa-close"></i> Fjern</button>
         </div>
+          <hr id="menylinje">
+        <div id="pizza">
+            <h3 id="ptittel">7. Mjøndalen Spesial</h3>
+            <p id="pbeskrivelse">Biff, pepperoni, paprika</p>
+          <p id="ppris">Liten: 149,-</p><p id="pris"> Stor: 199,-</p>
+        </div>
+          <hr id="menylinje">
+        <div id="pizza">
+            <h3 id="ptittel">8. Napoli</h3>
+            <p id="pbeskrivelse">Kjøttdeig, bacon,  løk</p>
+          <p id="ppris">Liten: 139,-</p><p id="pris"> Stor: 189,-</p>
           <hr class="menylinje">
         <div class="pizza">
             <h3 class="ptittel" id="ptittel7">7. Mjøndalen Spesial</h3>
@@ -169,6 +195,11 @@
           <button class="velg"  id="velg8" onclick="changeDisplay8();" >Velg <i class="fa fa-shopping-cart"></i></button>
           <button class="angre" id="angre8" onclick="changeDisplayagain8();"><i class="fa fa-close"></i> Fjern</button>
         </div>
+          <hr id="menylinje">
+        <div id="pizza">
+            <h3 id="ptittel">9. Kebabpizza</h3>
+            <p id="pbeskrivelse">Biff, løk, champignon, salat, tomat, hvitløkssaus</p>
+          <p id="ppris">Liten: 159,-</p><p id="pris"> Stor: 209,-</p>
           <hr class="menylinje">
         <div class="pizza">
             <h3 class="ptittel" id="ptittel9">9. Kebabpizza</h3>
@@ -177,6 +208,11 @@
           <button class="velg"  id="velg9" onclick="changeDisplay9();" >Velg <i class="fa fa-shopping-cart"></i></button>
           <button class="angre" id="angre9" onclick="changeDisplayagain9();"><i class="fa fa-close"></i> Fjern</button>
         </div>
+          <hr id="menylinje">
+        <div id="pizza">
+            <h3 id="ptittel">10. Vegetar</h3>
+            <p id="pbeskrivelse">Paprika, ananas, champignon, løk, oliven</p>
+          <p id="ppris">Liten: 109,-</p><p id="pris"> Stor: 159,-</p>
           <hr class="menylinje">
         <div class="pizza">
             <h3 class="ptittel" id="ptittel10">10. Vegetar</h3>
@@ -189,27 +225,10 @@
   </section>
 
   <footer>
-  <hr id="linje">
-    <ul>
-
-      <li>
-        Kontakt oss:
-      </li>
-      <br />
-      <li>
-        Epostadresse: pizza@martin.lange.no
-      </li>
-      <li>
-        tlf: +47 959 40 838
-      </li>
-      <li>
-        Facebook: @Pizzastekeren
-      </li>
-      <li>
-
-      </li>
+@ -168,6 +211,6 @@
     </ul>
   </footer>
+
 
   <script type="text/javascript" src="scripts/bestilling.js"></script>
 </body>
