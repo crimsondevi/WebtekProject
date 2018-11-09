@@ -3,43 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Søk jobb</title>
-      <link rel="stylesheet" type="text/css" href="mal.css">
+      <link rel="stylesheet" type="text/css" href="css/mal.css">
+      <link rel="stylesheet" type="text/css" href="css/sokjobb.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   </head>
   <body>
-
-    <div class="meny">
-
-    <div class=liste>
-
-  <a href="hjem.html"><input type="image" id="logo2" alt="Login" src="img/logopizza.png"></input></a>
-
-                  <ul>
-                      <a href="hjem.html"><input type="image" id="logo" alt="Login" src="img/logopizza.png"></input></a>
-                    <li><a href="Meny.html">Meny/bestill</a></li>
-                    <li><a href="omoss.html">Om restauranten</a></li>
-                    <li><a href="kontakt.html">Ta kontakt</a></li>
-                    <li><a href="sok_jobb.html">Søk jobb</a></li>
-                </ul>
-
-                <div class="dropdown">
-                  <button class="dropbtn"><i class="fa fa-bars"></i></button>
-                      <div class="dropdown-content">
-                  <a href="Meny.html">Meny/bestill</a>
-                  <a href="omoss.html">Om resturanten</a>
-                  <a href="kontakt.html">Ta kontakt</a>
-                    <a href="sok_jobb.html">Søk jobb</a>
-                </div>
-              </div>
-              </div>
-                <hr>
-                      </div>
-                </div>
-
-  </section>
-
+<nav id="navigasjonsmeny"></nav>
   <section id="søkJobb">
     <div class="info">
     <h2>Ønsker du jobb hos Pizzasteikeren?</h2>
@@ -50,7 +21,7 @@
   <div id="skjema">
 
       <label for="navn"> Navn: </label><br>
-      <input type="text" id="navn" name="navn" placeholder="Navn Navnesen" required pattern="[A-Za-z\s]+"><br>
+      <input type="text" id="navn1" name="navn" placeholder="Navn Navnesen" required pattern="[A-Za-z\s]+"><br>
       <br>
       <label for="E-post">E-post:</label><br>
       <input type="email" id="E-post" name="E-post" placeholder=" navn.navnesen@eksempel.no" required><br>
@@ -65,35 +36,12 @@
       <br>
       <input type="file" name="fileupload" value="fileupload" id="fileupload" required><br>
       <br>
-      <input type="submit" id="submit" value="Send">
+      <input type="submit" id="submit" onclick="sendSøknad()" value="Send">
 
   </div>
   <img id="bilde_søk_jobb" src="img/sok_jobb.jpg" alt="Søk jobb hos oss, bilde!">
 </section>
-
-  <footer>
-    <hr id="linje">
-    <ul>
-
-      <li>
-        Kontakt oss:
-      </li>
-      <br />
-      <li>
-        Epostadresse: pizza@martin.lange.no
-      </li>
-      <li>
-        tlf: +47 959 40 838
-      </li>
-      <li>
-        Facebook: @Pizzastekeren
-      </li>
-      <li>
-
-      </li>
-    </ul>
-  </footer>
-
-
+<nav id="footer"></nav>
+<script src="scripts/script.js"></script>
   </body>
 </html>

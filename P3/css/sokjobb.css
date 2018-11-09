@@ -3,9 +3,11 @@
   background-color:  rgb(249, 249, 235,0.9);
   margin:10%;
   margin-top: 5%;
-  margin-bottom: 5%;
   color: #7a4d1f;
-  font-family: "Arial Narrow", sans-serif;
+  margin-bottom:0;
+  font-family: "Didot", serif;
+  font-size: 20px;
+
 }
 
 #submit{
@@ -31,11 +33,21 @@
 #bilde_søk_jobb{
 position: absolute;
 right:19%;
-top:25%;
-width:25%;
+top:33%;
+width:250px;
+padding: 2%;
 }
 
 .innhold{
 padding-left: 3%;
 padding-top: 2%;
+}
+
+@media screen and (max-width:750px) {
+  #bilde_søk_jobb{
+    display: none;
+  }
+  #søkJobb{
+    height:800px;
+  }
 }

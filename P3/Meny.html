@@ -3,146 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Pizzastekeren</title>
-    <link rel="stylesheet" type="text/css" href="mal.css">
+    <link rel="stylesheet" type="text/css" href="css/mal.css">
+    <link rel="stylesheet" type="text/css" href="css/meny.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
   </head>
   <body>
-
-    <div class="meny">
-
-    <div class=liste>
-
-
-
-      <a href="hjem.html"><input type="image" id="logo2" alt="Login" src="img/logopizza.png"></input></a>
-
-                      <ul>
-                          <a href="hjem.html"><input type="image" id="logo" alt="Login" src="img/logopizza.png"></input></a>
-                          <li><a href="Meny.html">Meny/bestill</a></li>
-                          <li><a href="omoss.html">Om restauranten</a></li>
-                          <li><a href="kontakt.html">Kontakt oss</a></li>
-                          <li><a href="sok_jobb.html">Søk jobb</a></li>
-                      </ul>
-
-  <div class="dropdown">
-    <button class="dropbtn"><i class="fa fa-bars"></i></button>
-        <div class="dropdown-content">
-    <a href="Meny.html">Meny/bestill</a>
-    <a href="omoss.html">Om resturanten</a>
-    <a href="kontakt.html">Ta kontakt</a>
-      <a href="sok_jobb.html">Søk jobb</a>
-  </div>
-</div>
-</div>
-  <hr>
-        </div>
-  </div>
-    <style>
-
-
-
-    .fyll{
-      text-align:center;
-      font-size: 20px;
-
-
-    }
-    .tittel{
-      text-align: center;
-    padding-top:2%;
-
-    }
-    .pris{
-      text-align: center;
-      font-size: 20px;
-    }
-
-    .linje{
-      width: 80%;
-      color: #7a4d1f;
-      margin:0;
-      background-color: #7a4d1f;
-      border:0;
-      height:1px;
-      margin-right: 5%;
-      margin-left: 5%;
-    }
-
-    .add{
-    width: 50px;
-    height: 30px;
-    margin: 5px;
-    }
-    .fjern{
-    width: 50px;
-    height: 30px;
-    margin: 5px;
-    display: none;
-  }
-    #pizza{
-      text-align: center;
-    }
-
-    .angre{
-      display: inline;
-      width:80px;
-      height:30px;
-      align-self: center;
-    }
-    #handlekurv{
-      position: fixed;
-      right:10px;
-      bottom: 0;
-      width:200px;
-      background-color: white;
-      height:300px;
-      border-width: 1px;
-      border: solid black;
-      display: none;
-
-    }
-    input{
-      position: absolute;
-      bottom: 2px;
-      margin:5px;
-    }
-    #pmeny{
-    background-color:  rgb(249, 249, 235,0.9);
-    margin:10%;
-    margin-top: 5%;
-    margin-bottom: 0;
-    color: #7a4d1f;
-
-    }
-
-    #add2{
-      width:100px;
-    }
-    #add5{
-      width:100px;
-    }
-    }
-
-    label{
-      position: absolute;
-      bottom: 2px;
-      margin:5px;
-      padding-bottom: 4px;
-      right: 0;
-
-    }
-    </style>
-  </head>
-
-<body>
+<nav id="navigasjonsmeny"></nav>
 <!-- Bestillingskjema -->
     <div id="handlekurv">
       <ul id="liste">
       </ul>
       <label for="submit">Send bestilling</label>
-      <input id="send" type="submit"></input>
+      <input id="send" type="submit"/>
     </div>
 
     <!-- Menyen -->
@@ -153,34 +25,8 @@
 
 
   </section>
-
-  <footer>
-<hr id="linje">
-    <ul>
-
-      <li>
-        Kontakt oss:
-      </li>
-      <br />
-      <li>
-        Epostadresse: pizza@martin.lange.no
-      </li>
-      <li>
-        tlf: +47 959 40 838
-      </li>
-      <li>
-        Facebook: @Pizzastekeren
-      </li>
-      <li>
-
-      </li>
-    </ul>
-  </footer>
-
-
-
-  </body>
-  </html>
+  <nav id="footer"></nav>
+  <script src="scripts/script.js"></script>
 
   <script type="text/javascript" src="scripts/bestilling.js"></script>
 </body>
