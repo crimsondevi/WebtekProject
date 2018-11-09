@@ -1,0 +1,124 @@
+body {
+  background-image: url("img/bakgrunn.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.meny {
+padding-bottom: 1%;
+background-color: rgb(0,0,0,0.8);
+padding: 2%;
+
+
+}
+
+ .meny ul {
+    list-style-type: none;
+    position:relative;
+    align-self: center;
+    padding-left: 0px;
+
+
+}
+
+#logo2{
+  width:130px;
+  padding: 2%;
+  display: none;
+}
+
+.meny li{
+    display: inline;
+    margin-top: 0.5%;
+    font-size: 20px;
+ }
+
+.meny ul a {
+    padding: 3%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-style: oblique;
+}
+
+.meny ul a:hover {
+  color: #E4A957;
+}
+
+.meny ul a:active {
+  text-decoration: underline;
+}
+
+footer {
+background-color: rgb(0,0,0,0.8);
+padding:0;
+}
+
+footer ul{
+  list-style-type:none;
+  display: table;
+  padding:20px;
+  bottom: 0;
+  color: white;
+  height:30px;
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
+footer ul li{
+  display: table;
+  margin:auto;
+  text-align: center;
+}
+
+.dropbtn {
+  position: absolute;
+  bottom:10px;
+    background-color: #4d4d4d;
+    color: white;
+    font-size: 200%;
+    border: none;
+    display: none;
+    width:70px;
+    height:70px;
+}
+
+.dropdown {
+    position: relative;
+    bottom:15px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:0px;
+    background-color: #d9d9d9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* linkene inni dropdownmenyen */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Endrer fargen på linkene når musa er over */
+.dropdown-content a:hover {background-color: #bfbfbf;}
+
+/*viser dropdownmenyen når musa er over */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* ENdrer fargen på knappen når musa er over */
+.dropdown:hover .dropbtn {background-color: #404040;}
+
+@media (max-width: 960px) {
+  .meny ul     { display: none; }
+  .dropbtn { display: inline-block; }
+  #logo2  { display: inline-block; }
+}
