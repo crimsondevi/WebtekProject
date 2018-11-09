@@ -56,6 +56,8 @@ const retter=[
 
 /*lager menyen, 10 elementer */
 
+
+
 for ( var i=0; i<10; i++){
 
   var tittel=document.createElement("h2");
@@ -107,6 +109,7 @@ document.getElementById('send').addEventListener('click',sendbestilling);
 
 /*Bestill */
 for ( var i=0; i<10; i++){
+
   function changeDisplay(){
     document.getElementById('handlekurv').style.display="inline";
     document.getElementById('fjern'+(i+1)).style.display="inline";
@@ -114,6 +117,7 @@ for ( var i=0; i<10; i++){
 }
   document.getElementById('add'+(i+1)).addEventListener("click", changeDisplay);
   document.getElementById('add'+(i+1)).addEventListener("click", lagListe);
+
 }
 
 function lagListe() {
