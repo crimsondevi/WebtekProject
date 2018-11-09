@@ -47,8 +47,8 @@ const retter=[
   pris: 160
 },
 {
-  pizza:'en god en',
-  fyll: 'Masse digg',
+  pizza:'Tacokylling',
+  fyll: 'Krydret kylling, løk, jalapeno, nachochips ',
   pris: 200
 }
 ];
@@ -58,13 +58,11 @@ const retter=[
 
 for ( var i=0; i<10; i++){
 
-
   var tittel=document.createElement("h2");
   tittel.className = ('tittel');
   var navn=document.createTextNode((1+i)+'.'+retter[i].pizza);
   tittel.appendChild(navn);
   document.getElementById('pizza').appendChild(tittel);
-
 
   var paragraf = document.createElement("p");
   paragraf.className=('fyll');
@@ -79,7 +77,18 @@ for ( var i=0; i<10; i++){
   document.getElementById('pizza').appendChild(pris);
 
   var btn=document.createElement('button');
+  btn.setAttribute('class','add')
+  btn.setAttribute('id','add'+(i+1))
+  var velg=document.createTextNode("Velg");
+  btn.appendChild(velg);
   document.getElementById('pizza').appendChild(btn);
+
+  var btn1=document.createElement('button');
+  btn1.setAttribute('class','fjern')
+  btn1.setAttribute('id','fjern'+(i+1))
+  var fjern=document.createTextNode("fjern");
+  btn1.appendChild(fjern);
+  document.getElementById('pizza').appendChild(btn1);
 
   var linje=document.createElement('hr');
   linje.className=("linje");
@@ -88,10 +97,34 @@ for ( var i=0; i<10; i++){
 
 }
 
+/* Send bestilling */
+function sendbestilling(){
+  alert('Din bestilling er send!')
+  window.location.reload(true);
+  document.getElementById('handlekurv').style.display="none";
+}
+document.getElementById('send').addEventListener('click',sendbestilling);
+
+/*Bestill */
+for ( var i=0; i<10; i++){
+  function changeDisplay(){
+    document.getElementById('handlekurv').style.display="inline";
+    document.getElementById('fjern'+(i+1)).style.display="inline";
+    document.getElementById('add'+(i+1)).style.display="none";
+}
+  document.getElementById('add'+(i+1)).addEventListener("click", changeDisplay);
+  document.getElementById('add'+(i+1)).addEventListener("click", lagListe);
+}
+
+function lagListe() {
+  var li=document.createElement('li');
+  li.appendChild(document.createTextNode(navn.textContent));
+  liste.appendChild(li);
+}
 
 
-
-
+  /*  createShoppingElement(i)
+  }
 
 
 
