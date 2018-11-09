@@ -1,0 +1,397 @@
+body {
+  background-image: url("img/bakgrunn.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.meny {
+padding-bottom: 1%;
+background-color: rgb(0,0,0,0.8);
+padding: 2%;
+
+
+}
+
+ .meny ul {
+    list-style-type: none;
+    position:relative;
+    align-self: center;
+    padding-left: 0px;
+
+
+}
+
+#logo{
+  width:130px;
+  padding-top: 2%;
+
+}
+#logo2{
+  width:130px;
+  padding: 2%;
+}
+.meny li{
+    display: inline;
+    margin-top: 0.5%;
+    font-size: 20px;
+
+
+ }
+.meny ul a {
+    padding: 3%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-style: oblique;
+
+}
+
+.meny ul a:hover {
+  color: #E4A957;
+
+}
+
+.meny ul a:active {
+  text-decoration: underline;
+}
+
+footer {
+  background-color:  rgb(249, 249, 235,0.9);
+  margin:10%;
+  margin-top: 0;
+  color: #7a4d1f;
+  margin-bottom: 5%;
+}
+
+
+footer ul{
+  list-style-type:none;
+  display: table;
+  padding:20px;
+  bottom: 0;
+  color: #7a4d1f;
+  height:30px;
+  padding-left: 40%;
+  padding-right: 40%;
+  margin-top: 0;
+
+}
+
+footer ul li{
+  text-align: center;
+
+}
+.dropbtn {
+  position: absolute;
+  bottom:10px;
+    background-color: #4d4d4d;
+    color: white;
+    font-size: 200%;
+    border: none;
+    display: none;
+    width:70px;
+    height:70px;
+}
+
+
+.dropdown {
+    position: relative;
+    bottom:15px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:0px;
+    background-color: #d9d9d9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/*style for hjem*/
+
+  .collage{
+    margin:10%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+
+  }
+
+        .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 8px;
+
+    }
+    .column {
+      flex: 25%;
+      max-width: 35%;
+      padding: 10px 6px;
+
+    }
+
+    .column img {
+      margin-top: 8px;
+      width:100%;
+      height: 50%;
+
+      }
+      #trepizza{
+        height: 55%;
+
+      }
+      #pizzaMedFolk{
+        height:45%;
+      }
+      #pizzaHender{
+        height:70%;
+      }
+      #pizzahender2{
+        height: 30%;
+      }
+
+
+
+/* Responsive layout - kolonnene med bilder blir oppå hverandre og ikke ved siden av verandre*/
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+      @media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* linkene inni dropdownmenyen */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Endrer fargen på linkene når musa er over */
+.dropdown-content a:hover {background-color: #bfbfbf;}
+
+/*viser dropdownmenyen når musa er over */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* ENdrer fargen på knappen når musa er over */
+.dropdown:hover .dropbtn {background-color: #404040;}
+
+
+#logo2{
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .meny ul     { display: none; }
+  .dropbtn { display: inline-block; }
+  #logo2  { display: inline-block; }
+
+}
+
+
+
+
+/*style for om oss*/
+#omOss{
+    background-color:  rgb(249, 249, 235,0.9);
+    margin:10%;
+    margin-top: 5%;
+    margin-bottom:0;
+    color: #7a4d1f;
+    text-align: center;
+
+  }
+  #tekst{
+    width: 80%;
+    text-align: center;
+    margin:auto;
+  }
+  #åpningstider {list-style-type: none;}
+  }
+  #åpningstider{
+    text-align: center;
+  }
+  #tekst{
+    text-align: center;
+  }
+  #overskrift{
+    text-align: center;
+  }
+  #overskrift{
+    text-align: center;
+    padding-top: 3%;
+  }
+  #pza2{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-left: 4%;
+
+  }
+  #pza{
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-top: 5%;
+
+}
+#slideshow{
+  margin-right: 20%;
+  margin-left: 20%;
+
+}
+/*style for meny*/
+
+  /* style for kontakt.html*/
+
+  #kontakt{
+    background-color:  rgb(249, 249, 235,0.9);
+    margin:10%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    color: #7a4d1f;
+    height: 600px;
+  }
+  .mapouter {
+    display: inline-block;
+    text-align:right;
+    height:10%;
+    width:10%;
+
+  }
+
+  .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:10%;
+    width:10%;
+  }
+
+  #kontakth1{
+    margin-top:5%;
+
+  }
+
+  .innholdVenstre{
+    display: inline-block;
+    width:30%;
+    margin-left:2%;;
+    margin-bottom: 100px;
+    top:1%;;
+  }
+  .innholdHøyre{
+    display: inline-block;
+    margin-top:2%;
+    float: right;
+    margin-right: 5%;
+
+  }
+  .opplysninger{
+    margin-left: 205px;
+    margin-top:-200px;
+    padding-bottom: 3%;
+
+  }
+  #knapp{
+    background-color: #4d4d4d;
+    color: white;
+    width:60px;
+    height: 35px;
+    margin-top: 20px;
+    border-color: #4d4d4d;
+  }
+  @media screen and (max-width: 800px) {
+    .innholdhøyre{
+      left:0;
+      align-self: center;
+    }
+    .innholdVenstre{
+      float:left;
+      align-self: center;
+    }
+    #kontakt{
+      height:1000px;
+    }
+  }
+
+
+
+  /*style for søkjobb */
+
+  #søkJobb{
+    position: relative;
+    background-color:  rgb(249, 249, 235,0.9);
+    margin:10%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    color: #7a4d1f;
+    height: 650px;
+  }
+  #submit{
+    background-color: #4d4d4d;
+    color: white;
+    width:60px;
+    height: 35px;
+    margin-top: 20px;
+    border-color: #4d4d4d;
+  }
+  .info{
+    width:90%;
+    padding-top: 2%;
+    padding-left: 5%;
+
+  }
+
+  #skjema{
+    position: absolute;
+    margin-left:5%;
+    padding-bottom: 3%;
+    width:50%;
+    margin-right: 1px;
+
+  }
+
+#bilde_søk_jobb{
+  position: absolute;
+  right:10%;
+  top:33%;
+  width:250px;
+  bottom:0;
+
+
+  }
+  @media screen and (max-width:650px) {
+    #bilde_søk_jobb{
+      display: none;
+    }
+    #søkJobb{
+      height:800px;
+    }
+  }
+
+#linje{
+    margin:0;
+    background-color: #7a4d1f;
+    border:0;
+    height:1px;
+    width: 90%;
+    margin-right: 3%;
+    margin-left: 3%;
+
+}
+
+
+
+
+.innhold{
+  padding-left: 3%;
+  padding-top: 2%;
+}
