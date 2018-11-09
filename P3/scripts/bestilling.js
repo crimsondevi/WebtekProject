@@ -79,18 +79,12 @@ for ( var i=0; i<10; i++){
   document.getElementById('pizza').appendChild(pris);
 
   var btn=document.createElement('button');
-  btn.setAttribute('class','add')
-  btn.setAttribute('id','add'+(i+1))
+  btn.setAttribute('class','add');
+  btn.setAttribute('id','add'+(i+1));
   var velg=document.createTextNode("Velg");
   btn.appendChild(velg);
   document.getElementById('pizza').appendChild(btn);
 
-  var btn1=document.createElement('button');
-  btn1.setAttribute('class','fjern')
-  btn1.setAttribute('id','fjern'+(i+1))
-  var fjern=document.createTextNode("fjern");
-  btn1.appendChild(fjern);
-  document.getElementById('pizza').appendChild(btn1);
 
   var linje=document.createElement('hr');
   linje.className=("linje");
@@ -101,29 +95,33 @@ for ( var i=0; i<10; i++){
 
 /* Send bestilling */
 function sendbestilling(){
-  alert('Din bestilling er send!')
+  alert('Din bestilling er sendt!')
   window.location.reload(true);
   document.getElementById('handlekurv').style.display="none";
 }
 document.getElementById('send').addEventListener('click',sendbestilling);
 
+liste1=[1,2,3,4]
+
 /*Bestill */
 for ( var i=0; i<10; i++){
-
-  function changeDisplay(){
-    document.getElementById('handlekurv').style.display="inline";
-    document.getElementById('fjern'+(i+1)).style.display="inline";
-    document.getElementById('add'+(i+1)).style.display="none";
-}
-  document.getElementById('add'+(i+1)).addEventListener("click", changeDisplay);
   document.getElementById('add'+(i+1)).addEventListener("click", lagListe);
-
 }
-
+/*
 function lagListe() {
-  var li=document.createElement('li');
-  li.appendChild(document.createTextNode(navn.textContent));
-  liste.appendChild(li);
+    document.getElementById('handlekurv').style.display="inline";
+    var li=document.createElement('li');
+    liste.appendChild(li);
+      for (var el in liste1){
+        li.innerHTML+= (liste1[el]);
+*/
+function lagListe() {
+    document.getElementById('handlekurv').style.display="inline";
+    var li=document.createElement('li');
+    liste.appendChild(li);
+
+        li.innerHTML+=(retter[i].pizza);
+
 }
 
 
