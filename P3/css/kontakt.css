@@ -1,0 +1,56 @@
+#kontakt{
+  position: relative;
+  background-color:  rgb(249, 249, 235,0.9);
+  margin:10%;
+  margin-top: 5%;
+  margin-bottom: 5%;;
+  color: #7a4d1f;
+}
+
+.mapouter {
+  display: inline-block;
+  text-align:right;
+  height:10%;
+  width:10%;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:10%;
+  width:10%;
+}
+
+#kontakth1{
+  margin-top:5%;
+}
+
+.innholdVenstre{
+  display: inline-block;
+  width:30%;
+  margin-left:2%;;
+  margin-bottom: 100px;
+  top:1%;;
+}
+
+.innholdHøyre{
+  display: inline-block;
+  width:60%;
+  margin-top:2%;
+  float: right;
+  margin-right: 5%;
+}
+
+.opplysninger{
+  margin-left: 205px;
+  margin-top:-200px;
+}
+
+#knapp{
+  background-color: #4d4d4d;
+  color: white;
+  width:60px;
+  height: 35px;
+  margin-top: 20px;
+  border-color: #4d4d4d;
+}
