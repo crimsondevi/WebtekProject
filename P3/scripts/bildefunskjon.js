@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //pictureCount er mengden bilder til bildefremvisningen.
   //Hvis man legger til flere bilder må man endre tallet
   //bildene må også følge navn stilen pizza + tall .jpg
-  var pictureCount = 6;
+  var pictureCount = 4;
 
   //changePza velger et tilfeldig bilde også kaller det seg selv etter 2 sekunder
   function changePza(img){

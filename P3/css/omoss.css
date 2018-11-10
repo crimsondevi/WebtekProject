@@ -36,12 +36,16 @@
     padding-bottom: 5%;
     padding-top: 5%;
     margin-left: 4%;
+    width:40%;
+    height:20%;
   }
 
 #pza{
     padding-bottom: 5%;
     padding-left: 2%;
     padding-top: 5%;
+    width: 40%;
+    height:20%;
 }
 
 #slideshow{
