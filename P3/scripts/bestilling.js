@@ -36,7 +36,7 @@ const retter = [
 },
 {
   pizza: 'Kebabpizza',
-  fyll:  'Biff, pepperoni, paprika',
+  fyll:  'Biff, paprika, løk, sterk saus, pomes frites, salat',
   pris: 190
 },
 {
@@ -85,12 +85,14 @@ document.getElementById("angre"+i).addEventListener("click", function() {
 document.getElementById('velg0').addEventListener('click', function() {
         liste.innerHTML+="<li id=pizza0>"+ retter[0].pizza +' '+retter[0].pris+',-'+"</li>"
         document.getElementById('handlekurv').style.display="inline";
+        /*var kost=parseInt(retter[0].pris);
+        document.getElementById("total").value+=kost; */
+
       });
 
 document.getElementById('velg1').addEventListener('click', function() {
            liste.innerHTML+="<li id=pizza1>"+ retter[1].pizza +' '+retter[1].pris+',-'+"</li>"
              document.getElementById('handlekurv').style.display="inline";
-
       });
 
 document.getElementById('velg2').addEventListener('click', function() {
@@ -130,6 +132,8 @@ document.getElementById('velg9').addEventListener('click', function() {
             liste.innerHTML+="<li id='pizza9'>"+retter[9].pizza+' '+retter[9].pris+',-'+"</li>"
               document.getElementById('handlekurv').style.display="inline";
           });
+
+/* Angre på pizzavalg */
 
 document.getElementById("angre0").addEventListener("click", function() {
             let fjern = document.getElementById("pizza0")
@@ -186,11 +190,32 @@ document.getElementById("angre9").addEventListener("click", function() {
       /* Send bestilling */
 
       function sendbestilling(){
-        alert('Din bestilling er sendt!')
-        window.location.reload(true);
-        document.getElementById('handlekurv').style.display="none";
-      }
+          let tlf = document.getElementById("tlfnr");
+          let adresse = document.getElementById("adressebestilling");
+
+          if (tlf.value == ""){
+            alert("Du må skrive inn et telefonnummer");
+          }
+
+          else if(adresse.value == ""){
+            alert("Du må skrive inn en adresse");
+          }
+          else{
+
+          alert('Din bestilling er sendt!')
+          window.location.reload(true);
+          document.getElementById('handlekurv').style.display="none";
+          }
+        }
       document.getElementById('send').addEventListener('click',sendbestilling);
+
+
+  /*    function myfunction(){
+        var var1=document.getElementById("income").value;
+        var var2=document.getElementById("wealth").value;
+        var ans=(0.35*parseInt(var1))+(0.25*parseInt(var2));
+        document.getElementById("tax").value=ans;
+      }
 
 
 
