@@ -1,63 +1,5 @@
 
-//Skjema til kontakt oss//
-
-function sendMail(){
-  let name = document.getElementById("navn");
-  let mail = document.getElementById("mail");
-  let comment = document.getElementById("kommentar");
-
-  if (name.value == ""){
-    alert("Du må skrive inn navn for å sende E-posten");
-  }
-
-  else if(mail.value == ""){
-    alert("Du må skrive inn en E-postadresse");
-  }
-
-  else if (comment.value == ""){
-    alert("Mailen din må inneholde en kommentar");
-  }
-
-  else{
-    alert("E-posten er sendt!");
-      window.location.reload(true);
-  }
-}
-//Skjema til søkjobb//
-
-
-function sendSøknad(){
-  let navn1 = document.getElementById("navn1");
-  let epost = document.getElementById("E-post");
-  let kommentar = document.getElementById("søknadsTekst");
-  let føds=document.getElementById('Fødselsdato')
-  let fil=document.getElementById('fileupload')
-
-  if (navn1.value == ""){
-    alert("Du må skrive inn navn for å sende inn søknad");
-  }
-
-  else if(epost.value == ""){
-    alert("Du må skrive inn en E-postadresse");
-  }
-  else if (føds.value == ""){
-    alert("Du må oppgi fødselsdatoen din");
-  }
-
-  else if (kommentar.value == ""){
-    alert("Søknaden din må inneholde en kommentar");
-  }
-
-  else if (fil.value == ""){
-    alert("Du må laste opp en CV");
-  }
-  else{
-    alert("Søknaden er sendt!");
-      window.location.reload(true);
-  }
-
-}
-
+//universell header//
 document.getElementById("navigasjonsmeny").innerHTML =(`<div class="meny">
 
 <div>
@@ -85,6 +27,8 @@ document.getElementById("navigasjonsmeny").innerHTML =(`<div class="meny">
                   <hr id="menylinje">
                         </div>
                   </div>`)
+
+  //universell footer//
 
 document.getElementById("footer").innerHTML = (`<footer>
     <hr id="footerlinje">
