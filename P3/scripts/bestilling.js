@@ -66,9 +66,9 @@ for (let i = 0; i < retter.length; i++) {
   <button class='angre' id='angre`+i+`'><i class='fa fa-close'></i> Fjern</button>`
 
   /*document.getElementById('velg'+i).addEventListener('click', function() {
-          console.log("test")
-          let liste = document.getElementById('liste');
-          liste.innerHTML+="<li id= 'pizza"+i+"'>"+ retter[i].pizza +"</li>"
+          liste.innerHTML+="<li id= 'pizza"+i+"'>"+ retter[i].pizza +"</li>";
+          document.getElementById('handlekurv').style.display="inline";
+          document.getElementById("aapne").style.display="none";
         });
 
 I teorien børe dette funke men det gjør det ikke,
@@ -223,7 +223,7 @@ document.getElementById("angre9").addEventListener("click", function() {
 
       }
 
-      function åpnehandlekurv(){
+      function aapnehandlekurv(){
         document.getElementById("handlekurv").style.display="inline"
         document.getElementById("aapne").style.display="none";
 
