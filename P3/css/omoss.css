@@ -1,5 +1,5 @@
 #omOss{
-    background-color:  rgb(249, 249, 235,0.9);
+    background-color:  rgba(249, 249, 235,0.9);
     margin:10%;
     margin-top: 5%;
     color: #7a4d1f;
@@ -13,18 +13,6 @@
     width: 80%;
     text-align: center;
     margin:auto;
-  }
-
-#åpningstider {list-style-type: none;}
-  }
-
-#åpningstider{
-    text-align: center;
-  }
-
-
-#overskrift{
-    text-align: center;
   }
 
 #overskrift{
