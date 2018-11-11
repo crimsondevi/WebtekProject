@@ -63,7 +63,7 @@ p{
   border-color: #4d4d4d;
 }
 @media screen and (max-width: 960px) {
-  .innholdhoyre{
+  .innholdHoyre{
     float:left;
 
   }
