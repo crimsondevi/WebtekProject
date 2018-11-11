@@ -1,11 +1,11 @@
 //Skjema til søkjobb//
 
 
-function sendSøknad(){
+function sendSoknad(){
   let navn1 = document.getElementById("navn1");
   let epost = document.getElementById("E-post");
-  let kommentar = document.getElementById("søknadsTekst");
-  let føds=document.getElementById('Fødselsdato')
+  let kommentar = document.getElementById("soknadsTekst");
+  let fods=document.getElementById('Fodselsdato')
   let fil=document.getElementById('fileupload')
 
   if (navn1.value == ""){
@@ -15,7 +15,7 @@ function sendSøknad(){
   else if(epost.value == ""){
     alert("Du må skrive inn en E-postadresse");
   }
-  else if (føds.value == ""){
+  else if (fods.value == ""){
     alert("Du må oppgi fødselsdatoen din");
   }
 

@@ -38,7 +38,7 @@ p{
   top:1%;;
 }
 
-.innholdHøyre{
+.innholdHoyre{
   display: inline-block;
   width:40%;
   margin-top:2%;
@@ -63,7 +63,7 @@ p{
   border-color: #4d4d4d;
 }
 @media screen and (max-width: 960px) {
-  .innholdhøyre{
+  .innholdhoyre{
     float:left;
 
   }
