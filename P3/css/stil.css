@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/bakgrunn.jpg");
+  background-image: url("../img/bakgrunnsbilde.jpeg");
 
 }
 
@@ -47,6 +47,10 @@ h2 {
   margin-left: 1em;
 
 }
+h3{
+  margin-left: 2em;
+  margin-right: 3em;
+}
 
 p, ol {
   margin-left: 3em;
@@ -65,3 +69,6 @@ ul {
     list-style-type: none;
     margin-left:55px;
 }
+  footer{
+    color: white;
+  }
