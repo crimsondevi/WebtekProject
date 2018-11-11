@@ -67,6 +67,19 @@ font-size: 15px;
       display: none;
 
     }
+    #åpne{
+      position: fixed;
+      right:10px;
+      bottom: 0;
+      width:20%;
+      height:7%;
+      background-color:  #f5f5dc;
+      border-width: 1px;
+      border: solid black;
+      display: none;
+      font-size: 15px;
+
+    }
     #send{
       position: absolute;
       width:80px;
@@ -75,7 +88,14 @@ font-size: 15px;
       text-align: center;
       margin-right: 20%;
       margin-left: 40%;
+        
 
+    }
+    #lukk{
+      position: absolute;
+      right:0;
+      top:0;
+      margin: 2px;
     }
     #forminput{
       display: inline-block;
