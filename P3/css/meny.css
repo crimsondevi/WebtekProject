@@ -38,6 +38,7 @@ font-size: 15px;
     margin-bottom: 2%;
     font-family: "Didot", serif;
     font-size: 20px;
+    border-radius: 8px;
     }
 
     .angre{
@@ -45,6 +46,7 @@ font-size: 15px;
       margin-bottom: 2%;
       font-family: "Didot", serif;
       font-size: 20px;
+      border-radius: 8px;
     }
     #pizza{
       text-align: center;
