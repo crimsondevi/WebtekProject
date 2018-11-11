@@ -7,7 +7,7 @@ document.getElementById("navigasjonsmeny").innerHTML =(`<div class="meny">
   <a href="hjem.html"><input type="image" id="logo2" alt="Login" src="img/logopizza.png"></input></a>
 
                   <ul id="headerul">
-                      <a href="hjem.html"><input type="image" id="logo" alt="Login" src="img/logopizza.png"></input></a>
+                      <a href="hjem.html"><img id="logo" alt="Login" src="img/logopizza.png"/></a>
                       <li class="headerli"><a href="Meny.html">Meny/bestill</a></li>
                       <li class="headerli"><a href="omoss.html">Om restauranten</a></li>
                       <li class="headerli"><a href="kontakt.html">Ta kontakt</a></li>
