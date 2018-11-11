@@ -108,7 +108,7 @@ font-size: 15px;
       font-size: 20px;
     }
 
-    label{
+    #labelmeny{
       display: inline-block;
       float: left;
       font-family: "Didot", serif;
@@ -118,7 +118,7 @@ font-size: 15px;
       margin-bottom: 2%;
 
     }
-    input{
+    #inputmeny{
       float:right;
       margin-right: 4%;
       margin: 2%;
