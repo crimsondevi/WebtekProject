@@ -66,9 +66,9 @@ for (let i = 0; i < retter.length; i++) {
   <button class='angre' id='angre`+i+`'><i class='fa fa-close'></i> Fjern</button>`
 
   /*document.getElementById('velg'+i).addEventListener('click', function() {
-          console.log("test")
-          let liste = document.getElementById('liste');
-          liste.innerHTML+="<li id= 'pizza"+i+"'>"+ retter[i].pizza +"</li>"
+          liste.innerHTML+="<li id= 'pizza"+i+"'>"+ retter[i].pizza +"</li>";
+          document.getElementById('handlekurv').style.display="inline";
+          document.getElementById("aapne").style.display="none";
         });
 
 I teorien børe dette funke men det gjør det ikke,
@@ -85,60 +85,60 @@ document.getElementById("angre"+i).addEventListener("click", function() {
 document.getElementById('velg0').addEventListener('click', function() {
         liste.innerHTML+="<li id=pizza0>"+ retter[0].pizza +' '+retter[0].pris+',-'+"</li>"
         document.getElementById('handlekurv').style.display="inline";
-          document.getElementById("åpne").style.display="none";
+          document.getElementById("aapne").style.display="none";
 
       });
 
 document.getElementById('velg1').addEventListener('click', function() {
            liste.innerHTML+="<li id=pizza1>"+ retter[1].pizza +' '+retter[1].pris+',-'+"</li>"
              document.getElementById('handlekurv').style.display="inline";
-               document.getElementById("åpne").style.display="none";
+               document.getElementById("aapne").style.display="none";
       });
 
 document.getElementById('velg2').addEventListener('click', function() {
             liste.innerHTML+="<li id=pizza2>"+ retter[2].pizza +' '+retter[2].pris+',-'+"</li>"
               document.getElementById('handlekurv').style.display="inline";
-                document.getElementById("åpne").style.display="none";
+                document.getElementById("aapne").style.display="none";
         });
 document.getElementById('velg3').addEventListener('click', function() {
             liste.innerHTML+="<li id=pizza3>"+ retter[3].pizza +' '+retter[3].pris+',-'+"</li>"
               document.getElementById('handlekurv').style.display="inline";
-                document.getElementById("åpne").style.display="none";
+                document.getElementById("aapne").style.display="none";
         });
 document.getElementById('velg4').addEventListener('click', function() {
             liste.innerHTML+="<li id=pizza4>"+ retter[4].pizza +' '+retter[4].pris+',-'+"</li>"
               document.getElementById('handlekurv').style.display="inline";
-                document.getElementById("åpne").style.display="none";
+                document.getElementById("aapne").style.display="none";
           });
 
 document.getElementById('velg5').addEventListener('click', function() {
             liste.innerHTML+="<li id=pizza5>"+ retter[5].pizza +' '+retter[5].pris+',-'+"</li>"
               document.getElementById('handlekurv').style.display="inline";
-                document.getElementById("åpne").style.display="none";
+                document.getElementById("aapne").style.display="none";
           });
 
 document.getElementById('velg6').addEventListener('click', function() {
             liste.innerHTML+="<li id=pizza6>"+ retter[6].pizza +' '+retter[6].pris+',-'+"</li>"
               document.getElementById('handlekurv').style.display="inline";
-                document.getElementById("åpne").style.display="none";
+                document.getElementById("aapne").style.display="none";
           });
 
 document.getElementById('velg7').addEventListener('click', function() {
             liste.innerHTML+="<li id=pizza7>"+ retter[7].pizza +' '+retter[7].pris+',-'+"</li>"
               document.getElementById('handlekurv').style.display="inline";
-                document.getElementById("åpne").style.display="none";
+                document.getElementById("aapne").style.display="none";
           });
 
 document.getElementById('velg8').addEventListener('click', function() {
             liste.innerHTML+="<li id=pizza8>"+ retter[8].pizza +' '+retter[8].pris+',-'+"</li>"
               document.getElementById('handlekurv').style.display="inline";
-                document.getElementById("åpne").style.display="none";
+                document.getElementById("aapne").style.display="none";
           });
 
 document.getElementById('velg9').addEventListener('click', function() {
             liste.innerHTML+="<li id='pizza9'>"+retter[9].pizza+' '+retter[9].pris+',-'+"</li>"
               document.getElementById('handlekurv').style.display="inline";
-                document.getElementById("åpne").style.display="none";
+                document.getElementById("aapne").style.display="none";
           });
 
 /* Angre på pizzavalg */
@@ -219,13 +219,13 @@ document.getElementById("angre9").addEventListener("click", function() {
 
       function lukkhandlekurv() {
         document.getElementById("handlekurv").style.display="none"
-        document.getElementById("åpne").style.display="inline";
+        document.getElementById("aapne").style.display="inline";
 
       }
 
-      function åpnehandlekurv(){
+      function aapnehandlekurv(){
         document.getElementById("handlekurv").style.display="inline"
-        document.getElementById("åpne").style.display="none";
+        document.getElementById("aapne").style.display="none";
 
       }
   /*    function myfunction(){
